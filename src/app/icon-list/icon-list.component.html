@@ -1,0 +1,5 @@
+<div class="icons">
+  <div *ngFor="let icon of icons|iconFilter:filter" (click)="copyText('mdi-' + icon.name)">
+    <i class="mdi mdi-{{icon.name}}"></i><code>{{icon.hex}}</code><span>mdi-{{icon.name}}</span>
+  </div>
+</div>

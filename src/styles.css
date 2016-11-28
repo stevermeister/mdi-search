@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #222;
+}
+
+h1, h2, div, footer {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    padding: 20px 20px 16px 20px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #FFF;
+    background-color: #2196F3;
+}
+
+h1 svg {
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    margin: 0 6px 4px 0;
+}
+
+h1 svg path {
+    fill: #FFF;
+}
+
+h1 .version {
+    font-size: 14px;
+    background: #FFF;
+    padding: 4px 10px;
+    float: right;
+    border-radius: 2px;
+    margin: -3px 0 0 0;
+    color: #666;
+    font-weight: bold;
+}
+
+h1 .version::before {
+    content: 'v';
+}
+
+h2 {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.icons {
+    padding: 0 20px 10px 20px;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.icons div {
+    line-height: 2em;
+}
+
+.icons div span {
+    cursor: pointer;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: calc(100% - 90px);
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.icons div code:hover,
+.icons div span:hover,
+.icons div i:hover {
+    color: #3c90be;
+}
+
+.icons div code:hover {
+    border-color: #3c90be;
+}
+
+.icons div code {
+    border: 1px solid #DDD;
+    width: 46px;
+    margin-left: 2px;
+    margin-right: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.icons div i {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.icons .mdi:before {
+    font-size: 24px;
+}
+
+pre {
+    margin: 0 20px;
+    font-family: Consolas, monospace;
+    padding: 10px;
+    border: 1px solid #DDD;
+    background: #F1F1F1;
+}
+
+div.copied {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: -100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 20px;
+    color: #666;
+    border-top: 1px solid #DDD;
+    background: #F1F1F1;
+}
+
+footer a {
+    color: #e91e63;
+    text-decoration: none;
+}

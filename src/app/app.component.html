@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="filter-search">
+        <div class="filter-search-wrap">
+            <div class="input-group">
+                <input type="search" 
+                  placeholder="Search..." 
+                  class="form-control ng-pristine ng-untouched ng-valid ng-empty" 
+                  (keyup)="noop()"
+                  #filter>
+            </div>
+        </div>
+    </div>
+<h2>Icons <small>(click to copy to clipboard)</small></h2>
+<app-icon-list [filter]="filter.value"></app-icon-list>
